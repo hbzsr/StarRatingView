@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:star="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试星星选择条" />
+
+        <com.zsr.view.StarRatingView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            star:ratable="true"
+            star:star_num="5"
+            star:star_padding="5dp"
+            star:star_stepInt="true"
+            star:stat_off="@mipmap/btn_pingjia_nor"
+            star:stat_on="@mipmap/btn_pingjia_sel" />
+
+    </LinearLayout>
+</layout>
